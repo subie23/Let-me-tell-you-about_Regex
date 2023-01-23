@@ -36,7 +36,7 @@ You can also use both anchors together to check for a full string match for the 
 ### Quantifiers
 These are used to specify the number of times a character or group of characters can occur in a pattern. When validating a password quantifiers can be used to ensure that certain criteria are met.
 
-For example, the `+` quantifier can be used to ensure that a password contains at least one or more of a specific character or set of characters. For example, a regex pattern of `^(?=.*[a-z])+` would ensure that the password contains at least one lowercase letter.
+For example, the `+` quantifier can be used to ensure that a password contains at least one or more of a specific character or set of characters. The regex pattern of `^(?=.*[a-z])+` would ensure that the password contains at least one lowercase letter.
 
 ### OR Operator
 The OR operator, represented by the "|" symbol, is a metacharacter used to match one of several possible patterns. When validating a password the OR operator can be used to ensure that a password meets one or more of a set of criteria.
@@ -51,7 +51,7 @@ For example, you could use character classes to ensure that a password contains 
 ### Flags
 These are used to specify various options that can affect the behavior of the regex pattern. When validating a password flags can be used to modify the behavior of the regex pattern.
 
-For example, the `i` flag makes the regex pattern case-insensitive, meaning that the pattern will match both uppercase and lowercase letters. For example, the regex pattern `^(?=.*[a-z])` with the "i" flag would match the password "PaSsWoRd", even though it contains only uppercase letters. The "m" flag makes the `^` and `$` anchors match at the beginning and end of a line, not just the entire string. And the "s" flag makes the dot metacharacter match any character including newline.
+For example, the `i` flag makes the regex pattern case-insensitive, meaning that the pattern will match both uppercase and lowercase letters. The regex pattern `^(?=.*[a-z])` with the "i" flag would match the password "PaSsWoRd", even though it contains only uppercase letters. The "m" flag makes the `^` and `$` anchors match at the beginning and end of a line, not just the entire string. And the "s" flag makes the dot metacharacter match any character including newline.
 
 ### Grouping and Capturing
 These are used to group characters and capture their match. When validating a password grouping and capturing can be used to apply quantifiers to the entire group, or refer to the captured text later in the pattern or in the replacement text.
@@ -95,5 +95,6 @@ You can use a look-behind to match a password that starts with a digit and conta
 
 ## Author
 Sue is an aspiring Full-Stack Developer.
+
 [subie23](https://github.com/subie23)
 
